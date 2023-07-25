@@ -1,0 +1,9 @@
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/25 - 16:19:17.889	[34minfo[0m	C:/Users/sirius/Documents/code/cmdb/initialize/router.go:42	register swagger handler
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/25 - 16:19:17.923	[34minfo[0m	C:/Users/sirius/Documents/code/cmdb/initialize/router.go:85	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/25 - 16:19:17.933	[34minfo[0m	C:/Users/sirius/Documents/code/cmdb/core/server.go:36	server run success on 	{"address": ":8888"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/25 - 16:24:01.539	[34minfo[0m	C:/Users/sirius/Documents/code/cmdb/initialize/router.go:42	register swagger handler
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/25 - 16:24:01.581	[34minfo[0m	C:/Users/sirius/Documents/code/cmdb/initialize/router.go:85	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/25 - 16:24:01.582	[34minfo[0m	C:/Users/sirius/Documents/code/cmdb/core/server.go:36	server run success on 	{"address": ":8888"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/25 - 16:25:46.369	[34minfo[0m	C:/Users/sirius/Documents/code/cmdb/initialize/router.go:42	register swagger handler
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/25 - 16:25:46.395	[34minfo[0m	C:/Users/sirius/Documents/code/cmdb/initialize/router.go:85	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/25 - 16:25:46.398	[34minfo[0m	C:/Users/sirius/Documents/code/cmdb/core/server.go:36	server run success on 	{"address": ":8888"}

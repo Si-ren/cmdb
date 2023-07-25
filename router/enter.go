@@ -9,7 +9,7 @@ import (
 type RouterGroup struct {
 	System  system.RouterGroup
 	Example example.RouterGroup
-	EC2     ec2.RouterGroup
+	Ec2     ec2.RouterGroup
 }
 
 var RouterGroupApp = new(RouterGroup)
