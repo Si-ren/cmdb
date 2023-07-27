@@ -16,4 +16,5 @@ var (
 	OldAuthorityVerify     = Rules{"OldAuthorityId": {NotEmpty()}}
 	ChangePasswordVerify   = Rules{"Password": {NotEmpty()}, "NewPassword": {NotEmpty()}}
 	SetUserAuthorityVerify = Rules{"AuthorityId": {NotEmpty()}}
+	MeetingVerify          = Rules{"MeetingRoomName": {NotEmpty()}, "MeetingTitle": {NotEmpty()}, "StartTime": {NotEmpty()}, "EndTime": {NotEmpty()}}
 )

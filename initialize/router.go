@@ -22,6 +22,7 @@ func Routers() *gin.Engine {
 	systemRouter := router.RouterGroupApp.System
 	exampleRouter := router.RouterGroupApp.Example
 	ec2Router := router.RouterGroupApp.Ec2
+	meetingRouter := router.RouterGroupApp.Meeting
 	// 如果想要不使用nginx代理前端网页，可以修改 web/.env.production 下的
 	// VUE_APP_BASE_API = /
 	// VUE_APP_BASE_PATH = http://localhost
@@ -57,6 +58,8 @@ func Routers() *gin.Engine {
 	{
 		systemRouter.InitBaseRouter(PublicGroup) // 注册基础功能路由 不做鉴权
 		systemRouter.InitInitRouter(PublicGroup) // 自动初始化相关
+		ec2Router.InitCustomerRouter(PublicGroup)
+		meetingRouter.InitCustomerRouter(PublicGroup)
 	}
 	PrivateGroup := Router.Group(global.GVA_CONFIG.System.RouterPrefix)
 	PrivateGroup.Use(middleware.JWTAuth()).Use(middleware.CasbinHandler())
@@ -78,7 +81,6 @@ func Routers() *gin.Engine {
 
 		exampleRouter.InitCustomerRouter(PrivateGroup)              // 客户路由
 		exampleRouter.InitFileUploadAndDownloadRouter(PrivateGroup) // 文件上传下载功能路由
-		ec2Router.InitCustomerRouter(PublicGroup)
 
 	}
 
